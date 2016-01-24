@@ -37,4 +37,19 @@ and lives.
 
 ```javascript
 //pacman.js
+var PacMan = function() {
+  this.extraLives = 2;
+  this.points = 0;
+  this.superTime = 0;
+}
+
+Pacman.prototype = {
+  eat: function(obj) {},
+  eatBall: function(ball) {
+    this.points += ball.ballType === "regular" ? 1000 : 100;
+  },
+  eatGhost: function(ghost) {},
+  die: function() {},
+  gameOver function() {}
+}
 ```
